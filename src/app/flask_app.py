@@ -19,7 +19,7 @@ def video_feed():
             array_str = ', '.join(map(str, client.parse_array_from_server()))
             logger.opt(colors=True).info(f'<m>Array: {array_str}, was recieved from server!</m>')
 
-            tprint(f'{array_str}', font='slant')
+            tprint(f'{array_str}', font="italic")
 
             ret, buffer = cv2.imencode('.jpg', frame)
             frame = buffer.tobytes()
