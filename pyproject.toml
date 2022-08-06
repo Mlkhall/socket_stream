@@ -2,7 +2,10 @@
 name = "socket_stream"
 version = "0.1.0"
 description = ""
-authors = ["Chumakov Mikhail <mikhail.ch2011@yandex.ru>"]
+authors = ["Chumakova Anastasia"]
+packages = [
+    { include = "src" }
+]
 
 [tool.poetry.dependencies]
 python = "^3.10"
@@ -24,3 +27,6 @@ pre-commit = "^2.20.0"
 [build-system]
 requires = ["poetry-core>=1.0.0"]
 build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+my-stream = "src.main:main"

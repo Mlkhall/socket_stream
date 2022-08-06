@@ -5,8 +5,8 @@ from threading import Thread
 from art import tprint
 from loguru import logger
 
-from app.flask_app import run_flask_server
-from service.socket_server.interface import run_socket_server
+from . app.flask_app import run_flask_server
+from . service.socket_server.interface import run_socket_server
 
 
 def signal_handler(signal_, frame) -> None:

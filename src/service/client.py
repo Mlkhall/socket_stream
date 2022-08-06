@@ -6,9 +6,8 @@ import cv2
 import numpy as np
 import zmq
 from loguru import logger
-from pydantic import PositiveInt, validate_arguments
-from core.config import Settings
-from service.socket_server.models import ServerData
+from .. core.config import Settings
+from . socket_server.models import ServerData
 
 
 class AbstractSocketClient(ABC):
@@ -78,8 +77,6 @@ class SocketClient(AbstractSocketClient):
                 break
 
 
-# def show_stream_pc():
-#     client = SocketClient()
-#     client.show_stream_pc()
-#
-# show_stream_pc()
+def show_stream_pc():
+    client = SocketClient()
+    client.show_stream_pc()
