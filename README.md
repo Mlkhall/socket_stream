@@ -15,14 +15,14 @@ PyZMQ.
 ## Установка
 
 - Склонируйте репозиторий
-    git clone ...
+    `git clone ...`
 - Откройте проект в среде разработке и создайте виртуальное окружение
-    python3 -m venv venv
+    `python3 -m venv venv`
 -  Активируйте виртуальное окружение
-    source venv/bin/activate
+    `source venv/bin/activate`
 - Если Вы в качестве менеджера пакетов используете pip, то установите первым делом Poetry
-    pip install poetry
+    `pip install poetry`
 - Далее установите зависимости в виртуальном окружении
-    <poetry install>
+    `poetry install`
 - Перейдите в директорию src и запустите проект
-    'poetry main.py'
+    `poetry main.py`
