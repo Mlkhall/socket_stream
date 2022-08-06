@@ -11,8 +11,8 @@ from pydantic import PositiveInt, validate_arguments
 from loguru import logger
 from art import tprint
 
-from src.core.config import Settings
-from src.service.socket_server.models import ServerData
+from core.config import Settings
+from service.socket_server.models import ServerData
 
 
 class AbstractContentGenerator(ABC):

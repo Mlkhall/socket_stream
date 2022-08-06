@@ -3,8 +3,8 @@ from flask import Flask, Response, render_template
 from art import tprint
 from loguru import logger
 
-from src.core.config import Settings
-from src.service.client import AbstractSocketClient, SocketClient
+from core.config import Settings
+from service.client import AbstractSocketClient, SocketClient
 
 app = Flask(__name__, template_folder='../../static/templates')
 

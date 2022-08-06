@@ -7,8 +7,8 @@ import numpy as np
 import zmq
 from loguru import logger
 from pydantic import PositiveInt, validate_arguments
-from src.core.config import Settings
-from src.service.socket_server.models import ServerData
+from core.config import Settings
+from service.socket_server.models import ServerData
 
 
 class AbstractSocketClient(ABC):
